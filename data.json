@@ -1,0 +1,322 @@
+[
+  {
+    "NodeID": 1,
+    "yesID": 37,
+    "noID": 36,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Is your planet bigger than the Earth?"
+  },
+  {
+    "NodeID": 36,
+    "yesID": 2,
+    "noID": 38,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Is it the same size?"
+  },
+  {
+    "NodeID": 37,
+    "yesID": 2,
+    "noID": 2,
+    "yesMultiplier": 1.25,
+    "noMultiplier": 1.5,
+    "question": "Is it bigger than Saturn?"
+  },
+  {
+    "NodeID": 38,
+    "yesID": 2,
+    "noID": 2,
+    "yesMultiplier": 0.5,
+    "noMultiplier": 0.25,
+    "question": "Is it bigger than Venus?"
+  },
+  {
+    "NodeID": 2,
+    "yesID": 3,
+    "noID": 13,
+    "yesMultiplier": 5,
+    "noMultiplier": 1,
+    "question": "Is your planet home to life?"
+  },
+  {
+    "NodeID": 3,
+    "yesID": 4,
+    "noID": 5,
+    "yesMultiplier": 1.4,
+    "noMultiplier": 1.1,
+    "question": "Is your life multicellular?"
+  },
+  {
+    "NodeID": 4,
+    "yesID": 7,
+    "noID": 6,
+    "yesMultiplier": 1.5,
+    "noMultiplier": 1,
+    "question": "Does your planet have intelligent life?"
+  },
+  {
+    "NodeID": 7,
+    "yesID": 8,
+    "noID": 10,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Is there a dominant life form on your planet?"
+  },
+  {
+    "NodeID": 8,
+    "yesID": 9,
+    "noID": 9,
+    "yesMultiplier": 1.5,
+    "noMultiplier": 1,
+    "question": "Can they use tools?"
+  },
+  {
+    "NodeID": 9,
+    "yesID": 10,
+    "noID": 10,
+    "yesMultiplier": 0.75,
+    "noMultiplier": 1,
+    "question": "Do they have a societal structure?"
+  },
+  {
+    "NodeID": 10,
+    "yesID": 11,
+    "noID": 21,
+    "yesMultiplier": 0.45,
+    "noMultiplier": 1,
+    "question": "Is your planet home to sentient life?"
+  },
+  {
+    "NodeID": 11,
+    "yesID": 12,
+    "noID": 14,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Do any species on your planet know how to generate electricity/energy?"
+  },
+  {
+    "NodeID": 12,
+    "yesID": 14,
+    "noID": 14,
+    "yesMultiplier": 0.5,
+    "noMultiplier": 1,
+    "question": "Do their methods pollute or exploit their environment?"
+  },
+  {
+    "NodeID": 5,
+    "yesID": 14,
+    "noID": 14,
+    "yesMultiplier": 1.1,
+    "noMultiplier": 1,
+    "question": "Do they photosynthesize?"
+  },
+  {
+    "NodeID": 6,
+    "yesID": 14,
+    "noID": 14,
+    "yesMultiplier": 1.25,
+    "noMultiplier": 0.9,
+    "question": "Is there life on your planet that lives on land?"
+  },
+  {
+    "NodeID": 13,
+    "yesID": 14,
+    "noID": 19,
+    "yesMultiplier": 1.3,
+    "noMultiplier": 0.8,
+    "question": "Does your planet have a magnetosphere?"
+  },
+  {
+    "NodeID": 14,
+    "yesID": 15,
+    "noID": 20,
+    "yesMultiplier": 1.22,
+    "noMultiplier": 0.6,
+    "question": "Does your planet have an atmosphere?"
+  },
+  {
+    "NodeID": 15,
+    "yesID": 16,
+    "noID": 17,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Does the atmosphere contain at least 20% oxygen?"
+  },
+  {
+    "NodeID": 16,
+    "yesID": 18,
+    "noID": 17,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Does your atmosphere contain carbon dioxide?"
+  },
+  {
+    "NodeID": 18,
+    "yesID": 20,
+    "noID": 17,
+    "yesMultiplier": 1.75,
+    "noMultiplier": 1,
+    "question": "Does your atmosphere contain nitrogen?"
+  },
+  {
+    "NodeID": 17,
+    "yesID": 20,
+    "noID": 20,
+    "yesMultiplier": 1.55,
+    "noMultiplier": 1,
+    "question": "Does your atmosphere contain high amounts of helium argon or krypton?"
+  },
+  {
+    "NodeID": 19,
+    "yesID": 20,
+    "noID": 20,
+    "yesMultiplier": 1,
+    "noMultiplier": 0.85,
+    "question": "Does your planet rotate?"
+  },
+  {
+    "NodeID": 20,
+    "yesID": 21,
+    "noID": 26,
+    "yesMultiplier": 1,
+    "noMultiplier": 0.7,
+    "question": "Does your planet have a crust?"
+  },
+  {
+    "NodeID": 21,
+    "yesID": 22,
+    "noID": 39,
+    "yesMultiplier": 1,
+    "noMultiplier": 0.9,
+    "question": "Is the average surface temperature of your planet above 0 degrees Celsius?"
+  },
+  {
+    "NodeID": 22,
+    "yesID": 23,
+    "noID": 24,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Is it above 50 degrees Celsius?"
+  },
+  {
+    "NodeID": 23,
+    "yesID": 25,
+    "noID": 24,
+    "yesMultiplier": 0.8,
+    "noMultiplier": 1,
+    "question": "Is it above 100 degrees Celsius?"
+  },
+  {
+    "NodeID": 25,
+    "yesID": 26,
+    "noID": 26,
+    "yesMultiplier": 0.9,
+    "noMultiplier": 1,
+    "question": "Is it above 122 degrees Celsius?"
+  },
+  {
+    "NodeID": 24,
+    "yesID": 26,
+    "noID": 26,
+    "yesMultiplier": 1.5,
+    "noMultiplier": 1,
+    "question": "Does your planet have liquid water?"
+  },
+  {
+    "NodeID": 39,
+    "yesID": 26,
+    "noID": 26,
+    "yesMultiplier": 1.3,
+    "noMultiplier": 0.86,
+    "question": "Does your planet have water ice?"
+  },
+  {
+    "NodeID": 26,
+    "yesID": 33,
+    "noID": 27,
+    "yesMultiplier": 0.75,
+    "noMultiplier": 1,
+    "question": "Is your planet's host star a protostar?"
+  },
+  {
+    "NodeID": 27,
+    "yesID": 28,
+    "noID": 29,
+    "yesMultiplier": 1.05,
+    "noMultiplier": 1,
+    "question": "Is it a main sequence star?"
+  },
+  {
+    "NodeID": 28,
+    "yesID": 33,
+    "noID": 33,
+    "yesMultiplier": 0.8,
+    "noMultiplier": 1.1,
+    "question": "Is your planet's host star a massive star?"
+  },
+  {
+    "NodeID": 29,
+    "yesID": 33,
+    "noID": 30,
+    "yesMultiplier": 1.05,
+    "noMultiplier": 1,
+    "question": "Is it a neutron star or white dwarf?"
+  },
+  {
+    "NodeID": 30,
+    "yesID": 33,
+    "noID": 31,
+    "yesMultiplier": 0.55,
+    "noMultiplier": 1,
+    "question": "Is it a red giant or red supergiant?"
+  },
+  {
+    "NodeID": 31,
+    "yesID": 33,
+    "noID": 32,
+    "yesMultiplier": 0.8,
+    "noMultiplier": 1,
+    "question": "Is it a black or brown dwarf?"
+  },
+  {
+    "NodeID": 32,
+    "yesID": 33,
+    "noID": 33,
+    "yesMultiplier": 0.7,
+    "noMultiplier": 0.3,
+    "question": "Is it a pulsar?"
+  },
+  {
+    "NodeID": 33,
+    "yesID": 34,
+    "noID": 34,
+    "yesMultiplier": 1.1,
+    "noMultiplier": 1,
+    "question": "Does your planet have a moon or moons?"
+  },
+  {
+    "NodeID": 34,
+    "yesID": 35,
+    "noID": 40,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Does your planet have rings?"
+  },
+  {
+    "NodeID": 35,
+    "yesID": 40,
+    "noID": 40,
+    "yesMultiplier": 1.1,
+    "noMultiplier": 0.9,
+    "question": "Are there or will there be artifical satellites?"
+  },
+  {
+    "NodeID": 40,
+    "yesID": 1,
+    "noID": 0,
+    "yesMultiplier": 1,
+    "noMultiplier": 1,
+    "question": "Play Again?"
+  }
+]
