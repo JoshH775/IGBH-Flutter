@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_coursework/nodeCard.dart';
+import 'package:igbh_flutter/nodeCard.dart';
 import 'dbhandler.dart';
 import 'package:flutter/material.dart';
 import 'package:swipable_stack/swipable_stack.dart';
@@ -102,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
       });
     }
     return Scaffold(
-        backgroundColor: Color(0xff181818),
+        backgroundColor: const Color(0xff181818),
         //Background Colour, not seen when using gradient image
         appBar: AppBar(
           title: const Text(
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontFamily: 'RubikMonoOne'),
           ),
           centerTitle: true,
-          backgroundColor: Color(0xff181818), //Appbar Colour
+          backgroundColor: const Color(0xff181818), //Appbar Colour
         ),
         body: Stack(children: [
           Positioned.fill(
@@ -182,49 +182,49 @@ class _HomeScreenState extends State<HomeScreen> {
 
           //Buttons
           Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Align(
                   alignment: Alignment.bottomLeft,
                   child: Container(
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                              color: Color(0xff5CB8E4),
+                              color: const Color(0xff5CB8E4),
                               width: 3,
                               style: BorderStyle.solid)),
                       width: 75,
                       height: 75,
                       child: FittedBox(
                           child: FloatingActionButton(
-                        child: Icon(
-                          IconData(0xe318, fontFamily: 'MaterialIcons'),
-                          color: Color(0xff8758ff),
-                        ),
                         onPressed: () { //Returns to splash screen on pressed #event_handler
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => splashScreen()));
+                                  builder: (context) => const splashScreen()));
                         },
                         heroTag: "Home",
                         backgroundColor: Colors.black,
+                        child: const Icon(
+                          IconData(0xe318, fontFamily: 'MaterialIcons'),
+                          color: Color(0xff8758ff),
+                        ),
                       ))))),
           Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Align(
                   alignment: Alignment.bottomRight,
                   child: Container(
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                              color: Color(0xff5CB8E4),
+                              color: const Color(0xff5CB8E4),
                               width: 3,
                               style: BorderStyle.solid)),
                       width: 75,
                       height: 75,
                       child: FittedBox(
                           child: FloatingActionButton(
-                        child: Icon(
+                        child: const Icon(
                           IconData(0xf048, fontFamily: 'MaterialIcons'),
                           color: Color(0xff8758ff),
                         ),
@@ -247,12 +247,12 @@ class endScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) { //3 Widgets in a Stack
     return Scaffold(
-        backgroundColor: Color(0xff181818),
+        backgroundColor: const Color(0xff181818),
         body: Stack(
           children: [
             Align(
-                alignment: Alignment(0, -0.5),
-                child: BorderedText(strokeColor: Color(0xff8758ff), strokeWidth: 4.0 ,child: Text(
+                alignment: const Alignment(0, -0.5),
+                child: BorderedText(strokeColor: const Color(0xff8758ff), strokeWidth: 4.0 ,child: Text(
                     textAlign: TextAlign.center,
                     "The estimated total cost of your planet was:",
                     style: GoogleFonts.poppins(
@@ -261,18 +261,18 @@ class endScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.italic)))),
             Align(
-              alignment: Alignment(0,0),
-              child: BorderedText(strokeWidth: 4.0, strokeColor: Color(0xff5CB8E4), child: Text(textAlign: TextAlign.center, "\$${realValue}", style: GoogleFonts.poppins(fontSize: 30, color: Colors.black),))
+              alignment: const Alignment(0,0),
+              child: BorderedText(strokeWidth: 4.0, strokeColor: const Color(0xff5CB8E4), child: Text(textAlign: TextAlign.center, "\$${realValue}", style: GoogleFonts.poppins(fontSize: 30, color: Colors.black),))
             ),
 
             Align(
-                alignment: Alignment(0,0.3),
-                child: BorderedText(strokeWidth: 4.0, strokeColor: Color(0xff5CB8E4), child: Text("(${displayValue})", style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),))
+                alignment: const Alignment(0,0.3),
+                child: BorderedText(strokeWidth: 4.0, strokeColor: const Color(0xff5CB8E4), child: Text("(${displayValue})", style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),))
             ),
 
             Align(
-                alignment: Alignment(0, 0.7),
-                child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Colors.black, side: BorderSide(width: 2.0, color: Color(0xff5CB8E4)), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),fixedSize: Size(MediaQuery.of(context).size.width*0.8, MediaQuery.of(context).size.width * 0.2)),child: Text("Play again?",style: GoogleFonts.poppins(fontSize: 25),), onPressed: () {Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen()));})),
+                alignment: const Alignment(0, 0.7),
+                child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Colors.black, side: const BorderSide(width: 2.0, color: Color(0xff5CB8E4)), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),fixedSize: Size(MediaQuery.of(context).size.width*0.8, MediaQuery.of(context).size.width * 0.2)),child: Text("Play again?",style: GoogleFonts.poppins(fontSize: 25),), onPressed: () {Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => const HomeScreen()));})),
           ],
         ));
   }

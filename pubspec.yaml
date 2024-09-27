@@ -1,5 +1,6 @@
-name: flutter_coursework
-description: A new Flutter project.
+name: igbh_flutter
+description: The same thing as my java spring one, but done in Flutter as an app. Supports IOS and Android.
+
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -39,8 +40,8 @@ dependencies:
   swipable_stack: ^2.0.0
   sqflite: ^2.2.0+3
   path_provider: ^2.0.11
-  google_fonts: ^3.0.1
-  intl: ^0.17.0
+  google_fonts: 6.1.0
+  intl: ^0.19.0
   bordered_text: ^2.0.0
 
 dev_dependencies:
@@ -52,7 +53,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
